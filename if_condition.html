@@ -1,0 +1,25 @@
+<html>
+<title> if condition </title>
+<head>
+<script>
+function myFunction()
+{
+	var hour=new Date().getHours();
+	var greetings;
+	if(hour < 18 )
+    {
+    	greetings="Good day";
+    }
+    else
+    {
+    	greetings="Good evening";
+    }
+    document.getElementById('demo').innerHTML=greetings;
+}
+</script>
+</head>
+<body>
+<p id="demo"> </p>
+<button type="button" onclick="myFunction()">Greet me </button>
+</body>
+</html>

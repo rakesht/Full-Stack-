@@ -1,0 +1,26 @@
+<html>
+<title>Confirmation box </title>
+<head>
+<script type="text/javascript">
+function getConfirmation(){
+	var retval=confirm(" Do you want to confirm?");
+	if(retval==true){
+		document.write("user wants to continue");
+		return true;
+	}
+		else
+		{
+			document.write("user doesn't want to continue");
+			return false;
+		}
+	}
+</script>
+</head>
+<body bgcolor="sky blue">
+<h1> This is confirmation box </h1>
+<form>
+<input type="button" value="click me" onclick="getConfirmation();">
+</input>
+</form>
+</body>
+</html>

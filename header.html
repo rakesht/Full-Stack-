@@ -1,0 +1,99 @@
+<html>
+<title> CSS Header for website layout </title>
+<head>
+<style>
+.header
+{
+	font-size:16px;
+	text-align:center;
+	padding:20px;
+	background-color:skyblue;
+}
+*{
+	box-sizing:border-box;
+}
+.topnav
+{
+	overflow:hidden;
+	background-color:lightgreen;
+}
+.topnav a
+{
+	float:left;
+	display:block;
+	color:red;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+.topnav:hover
+{
+	background-color:pink;
+	color:black;
+}
+.column
+{
+	float:left;
+	width:33.33%;
+	padding:15px;
+}
+
+.row:after
+{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+@media screen and (max-width:600px)
+{
+	.column
+	{
+		width:100%;
+	}
+}
+
+body
+{
+	margin:0;
+}
+
+  .footer
+  {
+  	background-color:skyblue;
+  	padding:10px;
+  	text-align:center;
+  }
+
+</style>
+</head>
+<body>
+<div class="header">
+<h1> This is my Header part </h1>
+</div>
+<div class="topnav">
+<a href="dropdowncss.html"> HOME </a>
+<a href="#"> ABOUT US </a>
+<a href="#"> CONTACT US </a>
+<a href="#"> BLOG </a>
+</div>
+<div class="row">
+ <div class="column">
+  <h1> column 1 </h1>
+  <p> jdbfjdjnggggggggggggggggggggggggggggggdknvlmzl;sgldkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb </p>
+  </div>
+  <div class="column">
+  <h1> column 2 </h1>
+  <p> bdfjddddlkjkljlskjjjjjjjjjjjjjjjjhkdjvklllllllxxxxxxxxxxxxxxxllllllllllvhjjhhjhjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh </p>
+  </div>
+ <div class="column">
+ <h1> column 3 </h1>
+ <p> gjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjnk,,,,,,,,,,,,,,,,,,,,,,,,,,,,hghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjgggggggggggggg</p>
+ </div>
+ </div>
+ <br><br><br><br><br><br> <br><br><br><br><br>
+ <div class="footer">
+ <h1> This belongs to particular company  @copyright 2019</h1>
+ </div>
+ </body>
+</html>

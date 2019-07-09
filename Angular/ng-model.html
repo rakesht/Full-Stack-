@@ -1,0 +1,21 @@
+<html>
+<title> ng-model </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+Name: <input ng-model="name">
+</div>
+<script>
+var app= angular.module('myApp',[]);
+app.controller('myCtrl',
+function()
+{
+	$scope.name="Rakesh T";
+});
+</script>
+<p> this is used to bind the value of input field element with the controller </p>
+</body>
+</html>

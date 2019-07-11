@@ -1,0 +1,19 @@
+<html>
+<title> currency filter </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p> Price: {{ price | currency : "INR" }} </p>
+</div>
+<script>
+var app = angular.module('myApp',[]).controller('myCtrl',
+function($scope)
+{
+	$scope.price=60;
+});
+</script>
+</body>
+</html>

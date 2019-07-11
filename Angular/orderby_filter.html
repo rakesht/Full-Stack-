@@ -1,0 +1,29 @@
+<html>
+<title> order by filter </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p> ordering the objects </p>
+<ul>
+<li ng-repeat="x in names | orderBy:'country'">
+{{ x.name + ',' + x.country }}
+</li>
+</ul>
+</div>
+<script>
+var app = angular.module('myApp',[]).controller('myCtrl',
+function($scope)
+{
+  $scope.names = [
+            {name:'Rakesh',country:'india'},
+            {name:'sai',country:'china'},
+            {name:'Shiva',country:'US'},
+            {name:'Harsha',country:'Australia'}
+  ];
+ });
+ </script>
+ </body>
+ </html>

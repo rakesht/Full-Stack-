@@ -1,0 +1,32 @@
+<html>
+<title> Angular js forms </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+<form>
+pick a topic:
+<select ng-model="myvar">
+<option value="">
+<option value="ECE"> ECE 
+<option value="EEE"> EEE
+<option value="CSE"> CSE
+</select>
+</form>
+<div ng-switch="myvar">
+<div ng-switch-when="ECE">
+<h1> ECE </h1>
+<p> This is Electronics communication </p>
+</div>
+<div ng-switch-when="EEE">
+<h1> EEE </h1>
+<p> This is Electrical engineering </p>
+</div>
+<div ng-switch-when="CSE">
+<h1> CSE </h1>
+<p> This is computer science enginerring </p>
+</div>
+</div>
+</body>
+</html>

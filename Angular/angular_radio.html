@@ -1,0 +1,29 @@
+<html>
+<title> Angular js forms </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+<form>
+pick a topic:
+<input type="radio" ng-model="myvar" value="ECE"> ECE </input>
+<input type="radio" ng-model="myvar" value="EEE"> EEE </input>
+<input type="radio" ng-model="myvar" value="CSE"> CSE </input>
+</form>
+<div ng-switch="myvar">
+<div ng-switch-when="ECE">
+<h1> ECE </h1>
+<p> This is Electroncis communications </p>
+</div>
+<div ng-switch-when="EEE">
+<h1> EEE </h1>
+<p> This is Electrical engineering </p>
+</div>
+<div ng-switch-when="CSE">
+<h1> CSE </h1>
+<p> This is computer science engineering </p>
+</div>
+</div>
+</body>
+</html>

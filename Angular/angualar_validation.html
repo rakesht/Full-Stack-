@@ -1,0 +1,14 @@
+<html>
+<title> Angular validation </title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body ng-app="">
+<form name="myForm">
+<input type="email" name="myInput" ng-model="myInput"> </input>
+</form>
+<p> Check the mail id </p>
+<h1> {{ myForm.myInput.$valid }} </h1>
+</body>
+</html>
